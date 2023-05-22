@@ -155,7 +155,7 @@ static void MagicMoose()
 
     Console.WriteLine();
     Console.WriteLine("Goodbye!"); // Display goodbye message
-    WhatsNext();
+    WhatsNext(); // Back to "What's next?" selection
 }
 
 static string GetQuestionFromUser()
@@ -249,8 +249,8 @@ static void RockPaperScissors()
 
         else if (userInput.ToLower() == "quit")  
         {
-            break;
-            WhatsNext();
+            break; //break out of function (return wasn't ending while loop)
+            WhatsNext(); // Back to "What's next?" selection
         }
 
 

@@ -263,7 +263,7 @@ static void RockPaperScissors()
         }
     }
 
-    if (userScore == 3) // If the user wins the game
+    if (userScore > computerScore) // If the user wins the game (changed to compare)
     {
         Console.WriteLine("YOU WIN!");
     }

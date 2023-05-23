@@ -119,14 +119,7 @@ bool MooseAsks(string question)
 void createAQuestion(string question, string trueResponse, string falseResponse)
 {
     bool isTrue = MooseAsks(question);
-    if (isTrue)
-    {
-        MooseSays(trueResponse);
-    }
-    else
-    {
-        MooseSays(falseResponse);
-    }
+    MooseSays(isTrue ? trueResponse : falseResponse);
 }
 
 
